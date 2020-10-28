@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: roboto, Helvetica, Arial, sans-serif;
+}
+
+body > header > p {
+    font-weight: 900;
+    color: whitesmoke;
+}
+
+body > header {
+    background-color: rgb(80, 80, 80);
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+body > header > nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    color: white
+}
+
+body > main {
+    max-width: 1600px;
+}
+
+body > header > nav > ul > li > a {
+    color: white;
+    margin-right: 8px;
+}
+
+#hero { 
+    position: relative;;
+    width: 100%; /* for IE 6 */
+    background-size: cover;
+ }
+ 
+ main > section > hgroup > h1 { 
+    position: absolute; 
+    top: 200px; 
+    left: 0; 
+    width: 100%; 
+ }
+
+ H1 span { 
+    color: white; 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+ }
+
+ h1 span.spacer {
+    padding:0 5px;
+ }
+
+
+/* body > main > section > hgroup {
+    color: white;
+    justify-content: center;
+    margin: auto;
+}
+
+#hero {
+    background-image: url(https://www.placebear.com/1000/500);
+    background-position: center
+} */
+
+#latestWorkGrid {
+    display: grid;
+    grid-template-areas:
+    "latestWorkHead"
+    "latestWorkImages";
+
+}
+
+#latestWorkImages {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    flex: 33%;
+}
+
+#about {
+    justify-content: center;
+    margin: auto
+
+}
+
+#servicesImages {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+footer {
+    background-color: darkgray;
+}
+
+#footer-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#footer-container > section > nav > ul{
+    list-style: none;
+    margin: 0;
+}
+
+#footer-container > section > nav > ul > li > a{
+    color: white;
+}
