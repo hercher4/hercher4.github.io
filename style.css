@@ -27,7 +27,8 @@ body > header > nav > ul {
 }
 
 body > main {
-    max-width: 1600px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 body > header > nav > ul > li > a {
