@@ -1,120 +1,255 @@
 body {
-    margin: 0;
-    font-family: roboto, Helvetica, Arial, sans-serif;
-}
-
-body > header > p {
-    font-weight: 900;
-    color: whitesmoke;
+    margin: auto;
+    font-family: roboto, Arial, Helvetica, sans-serif;
+    max-width: 1400px;
 }
 
 body > header {
-    background-color: rgb(80, 80, 80);
-    padding: 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: thistle;
+    padding: 1% 5% 1% 5%;
+    margin: auto;
+    border-bottom: 5px solid darkcyan;
 }
 
+body > header > p {
+    color: white;
+
+}
 
 body > header > nav > ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
-    color: white
-}
-
-body > main {
-    max-width: 1200px;
-    margin: auto;
 }
 
 body > header > nav > ul > li > a {
     color: white;
-    margin-right: 8px;
+    text-decoration: none;
+    justify-content: space-evenly;
+    padding: 10px;
 }
 
-#hero { 
-    position: relative;;
-    width: 100%; /* for IE 6 */
+body > header > nav > ul > li > a:hover {
+    color: darkcyan;
+}
+
+#hero{
+    display: block;
+    height: 400px;
+    background: url(https://www.placebear.com/1400/700);
     background-size: cover;
- }
- 
- main > section > hgroup > h1 { 
-    position: absolute; 
-    top: 200px; 
-    left: 0; 
-    width: 100%; 
- }
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
 
- H1 span { 
-    color: white; 
-    font: bold 24px/45px Helvetica, Sans-Serif; 
-    letter-spacing: -1px;  
-    background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
- }
+#herocontent {
+    text-align: center;
+}
 
- h1 span.spacer {
-    padding:0 5px;
- }
-
-
-/* body > main > section > hgroup {
+body > main > section > div > hgroup {
     color: white;
-    justify-content: center;
+    margin: auto;
+    padding-top: 10%;
+    position: relative;
+}
+
+body > main > section > div > a {
+    text-decoration: none;
+    color: white;
+    border: 4px solid white;
+    padding: 2px 4px;
+}
+
+body > main > section > div > a:hover {
+    text-decoration: none;
+    color: thistle;
+    border: 4px solid thistle;
+    padding: 2px 4px;
+}
+
+main h2 {
+    color: darkcyan;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 10px 15px 10px;
+    text-align: center;
+}
+
+main h2:hover {
+    color: thistle;
+}
+
+
+#latestworkgrid {
+    display: block;
     margin: auto;
 }
 
-#hero {
-    background-image: url(https://www.placebear.com/1000/500);
-    background-position: center
-} */
+#latestWorkHead {
 
-#latestWorkGrid {
-    display: grid;
-    grid-template-areas:
-    "latestWorkHead"
-    "latestWorkImages";
-
+    grid-area: latestWorkHead;
 }
+
+#latestWorkHead:hover {
+    color: thistle;
+}
+
 
 #latestWorkImages {
     display: flex;
-    justify-content: space-evenly;
+    grid-area: latestWorkHead;
+    justify-content: space-between;
+    max-width: 1100px;
     margin: auto;
-    flex: 33%;
+    border: 1px solid transparent;
+    padding: 10px 20px 30px 20px;
+    flex-wrap: wrap;
 }
 
-#about {
-    justify-content: center;
-    margin: auto
-
+.lwimage {
+    padding: 0px 15px 0px 15px;
 }
 
-#servicesImages {
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto;
-}
+  h4 {
+      float: left;
+  }
 
-footer {
-    background-color: darkgray;
-}
+  #about {
+      display: block;
+      background-color: thistle;
+      height: 250px;
+  }
 
-#footer-container {
-    display: flex;
-    flex-direction: row;
-}
+  #about h2:hover {
+      color: darkcyan;
+  }
 
-#footer-container > section > nav > ul{
-    list-style: none;
+  #about h2 {
+      color: white;
+      text-align: center;
+  }
+
+  #about p {
+text-align: left;
+max-width: 500px;
+margin: auto;
+color: rgb(50, 50, 50);
+  }
+
+/* #servicesgrid {
+    padding-bottom: 100px;
+} */
+
+  #servicesImages {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 900px;
+      margin: auto;
+      border: 1px solid transparent;
+      padding: 10px 20px 30px 20px;
+      flex-wrap: wrap;
+  }
+
+  .service {
+      display: block;
+      padding-bottom: 0px 0px 20px 0px;
+      max-width: 250px
+  }
+
+  #servicesGrid h3 {
+      margin: 0;
+      padding-top: 5px;
+      color: thistle;
+  }
+
+  #servicesGrid h3:hover {
+      color: darkcyan;
+  }
+
+  #servicesGrid p {
+      color: rgb(50, 50, 50);
+      padding-bottom: 30px;
+  }
+
+  #footer-container {
     margin: 0;
+    display: grid; 
+    background-color: thistle;
+    grid-template-areas:
+    "sitemap contact"
+    "files contact"
+    "rights rights";
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: left;
+    padding: 0px 30px 0px 30px;
+
+  }
+
+  Footer > div > section > nav > ul > li {
+      list-style: none;
+  }
+
+  Footer > div > section > nav > ul > li > a { 
+    text-decoration: none;
+    color: white;
+      
 }
 
-#footer-container > section > nav > ul > li > a{
+#footercontacts p {
+    color: darkcyan;
+
+    
+}
+
+
+#footersitemap {
+    grid-area: sitemap;
+}
+#footerfiles {
+    grid-area: files;
+}
+
+#footercontacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    grid-area: contact;
+}
+
+#footercontacts h2 {
+    color: darkcyan;
+}
+
+#footercontacts a {
+    text-decoration: none;
     color: white;
+    padding-bottom: 5px;
+}
+
+#social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 50px;
+    width: 50px;
+    padding-bottom: 80px;
+}
+
+#social img {
+    padding: 0px 5px;
+}
+
+#rights {
+   background-color: thistle;
+    margin-right: auto;
+    grid-area: rights;
+}
+
+footer > div > #rights > p {
+    text-align: center;
+    color: darkcyan;
 }
